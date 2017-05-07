@@ -17,6 +17,7 @@
     "type": "git"
   },
   "dependencies": {
+    "mongodb": "^2.2.26",
     "node-env-file": "^0.1.8",
     "parse": "^1.9.2",
     "yargs": "^7.1.0"
