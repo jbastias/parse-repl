@@ -23,6 +23,23 @@ const argv = yargs
 
 console.log('mongo connection string: ' + argv.constr);
 
+
+// var pngStringify = require('console-png');
+//
+// var image = require('fs').readFileSync(__dirname + '/../src/img/parse.png');
+//
+// pngStringify(image, function (err, string) {
+//   if (err) throw err;
+//   console.log(string);
+// })
+
+
+
+// console.log('xxxx');
+
+
+
+
 const mongo = new MongoClient();
 mongo.connect(argv.constr, function(err, db) {
   if (err) { return console.log('WTF, something went wrong'); }

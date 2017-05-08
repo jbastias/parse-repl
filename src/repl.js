@@ -1,6 +1,13 @@
+import termImg from 'term-img';
 import repl from 'repl';
 
+function fallback() {
+	console.log('');
+}
+
 export default function useRepl(db) {
+
+	termImg(__dirname + '/../src/img/parse.png', { fallback });
 
   const replServer = repl.start({
     prompt: 'parse-repl> ',
